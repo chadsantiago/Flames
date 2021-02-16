@@ -1,0 +1,301 @@
+/* COLOR */
+/* FONTS */
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap");
+header {
+  width: 100%;
+  height: 9vh;
+  background-color: #e75651;
+  border-bottom: 2px solid #fff;
+  position: fixed;
+  top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 2;
+  padding-top: 0;
+  padding-bottom: 0;
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+}
+
+header .container {
+  background-color: #e75651;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.logo-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.logo-container img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 40px;
+}
+
+.links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  width: 50%;
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+}
+
+.menu-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+}
+
+.menu-links li a {
+  font-family: "Space Mono", monospace;
+  color: #dddddd;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+  padding-left: 3em;
+}
+
+.menu-links li a:hover {
+  color: #ffbf04;
+}
+
+.button-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 1em;
+  padding-bottom: 3em;
+}
+
+.send-button {
+  font-family: "Space Mono", monospace;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 400;
+  width: 220px;
+  padding: 1em 0;
+  background: transparent;
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 8px;
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.input {
+  padding-bottom: 1em;
+}
+
+.input input {
+  font-family: "Space Mono", monospace;
+  padding: 10px;
+  height: 50px;
+  font-size: 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+  border-radius: 8px;
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+}
+
+form {
+  display: inline-block;
+}
+
+@media (min-width: 320px) {
+  .input input {
+    width: 300px;
+  }
+  .title {
+    font-size: 35px;
+  }
+  .result {
+    font-size: 45px;
+  }
+}
+
+@media (min-width: 576px) {
+  .input input {
+    width: 500px;
+  }
+  .title, .result {
+    font-size: 70px;
+  }
+}
+
+@media (min-width: 768px) {
+  .input input {
+    width: 500px;
+  }
+  .title, .result {
+    font-size: 70px;
+  }
+}
+
+@media (min-width: 992px) {
+  .input input {
+    width: 500px;
+  }
+  .title, .result {
+    font-size: 70px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .input input {
+    width: 500px;
+  }
+  .title, .result {
+    font-size: 70px;
+  }
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3 / 2), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
+  html {
+    overflow-x: hidden;
+  }
+}
+
+* {
+  -webkit-overflow-scrolling: touch;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #e75651;
+  color: #fff;
+}
+
+.title-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 2em;
+}
+
+.title {
+  font-family: "Space Mono", monospace;
+  color: #fff;
+}
+
+.invalid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.errors {
+  font-family: "Space Mono", monospace;
+  font-size: 13px;
+}
+
+::-webkit-input-placeholder {
+  color: #fff;
+  opacity: 1;
+  /* Firefox */
+}
+
+:-ms-input-placeholder {
+  color: #fff;
+  opacity: 1;
+  /* Firefox */
+}
+
+::-ms-input-placeholder {
+  color: #fff;
+  opacity: 1;
+  /* Firefox */
+}
+
+::placeholder {
+  color: #fff;
+  opacity: 1;
+  /* Firefox */
+}
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #fff;
+}
+
+::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: #fff;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+  outline: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:active {
+  text-decoration: none;
+}
+/*# sourceMappingURL=main.css.map */

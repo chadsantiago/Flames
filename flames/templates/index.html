@@ -1,0 +1,49 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+<section class="m-t4">
+
+    <div class="title-container pd-t2">
+        <h1 class="title text-center">LOVE CALCULATOR</h1>
+    </div>
+
+    <div class="container-content text-center">
+        <form action="/" method="POST">
+
+            <div class="input">
+                {% if form.firstname.errors %}
+                    {% for errors in form.firstname.errors %}
+                            {{ form.firstname(class='firstname', placeholder="name...", type="text", pattern="^[a-zA-Z][\sa-zA-Z]*$", title="Name") }}
+                        <div class="invalid">
+                        <span class="errors animate__animated animate__shakeX animate__delay-1s">{{ errors }}</span>
+                        </div>
+                    {% endfor %}
+                {% else %}
+                {{ form.firstname(class='firstname', placeholder="name...", type="text", pattern="^[a-zA-Z][\sa-zA-Z]*$", title="Name") }}
+                {% endif %}
+            </div>
+
+            <div class="input">
+                {% if form.secondname.errors %}
+                    {% for errors in form.secondname.errors %}
+                            {{ form.secondname(class='secondname', placeholder="name...", type="text", pattern="^[a-zA-Z][\sa-zA-Z]*$", title="Name") }}
+                        <div class="invalid">
+                        <span class="errors animate__animated animate__shakeX animate__delay-1s">{{ errors }}</span>
+                        </div>
+                    {% endfor %}
+                {% else %}
+                {{ form.secondname(class='secondname', placeholder="name...", type="text", pattern="^[a-zA-Z][\sa-zA-Z]*$", title="Name") }}
+                {% endif %}
+            </div>
+
+            <div class="button-container">
+                <input class="send-button" type="submit" value="calculate">
+            </div>
+
+        </form>
+    </div>
+</section>
+
+
+{% endblock %}

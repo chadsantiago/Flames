@@ -1,0 +1,213 @@
+.container {
+    width: 100%;
+    padding-right: 10px;
+    padding-left: 10px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.container-content {
+    width: 100%;
+    padding-right: 10px;
+    padding-left: 10px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+@media (min-width: 320px) {
+    .container {
+        max-width: 90%;
+    }
+
+}
+
+@media (min-width: 576px) {
+    .container {
+        max-width: 540px;
+    }
+
+    .container-content {
+        max-width: 540px;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 720px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        max-width: 960px;
+    }
+
+    .container-content {
+        max-width: 960px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1140px;
+    }
+
+    .container-content {
+        max-width: 1140px;
+    }
+}
+
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6 {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+h1,
+.h1 {
+    font-size: 2.5rem;
+}
+
+h2,
+.h2 {
+    font-size: 2rem;
+}
+
+h3,
+.h3 {
+    font-size: 1.75rem;
+}
+
+h4,
+.h4 {
+    font-size: 1.5rem;
+}
+
+h5,
+.h5 {
+    font-size: 1.25rem;
+}
+
+h6,
+.h6 {
+    font-size: 1rem;
+}
+
+.pd-t0 {
+    padding-top: .8em;
+}
+
+.pd-t1 {
+    padding-top: 1.5em;
+}
+
+.pd-t2 {
+    padding-top: 2.5em;
+}
+
+.pd-t3 {
+    padding-top: 3.5em;
+}
+
+.pd-b0 {
+    padding-bottom: .8em;
+}
+
+.pd-b1 {
+    padding-bottom: 1.5em;
+}
+
+.pd-b2 {
+    padding-bottom: 2.5em;
+}
+
+.pd-b3 {
+    padding-bottom: 3.5em;
+}
+
+.m-t0 {
+    margin-top: .8em;
+}
+
+.m-t1 {
+    margin-top: 1.5em;
+}
+
+.m-t2 {
+    margin-top: 2.5em;
+}
+
+.m-t3 {
+    margin-top: 3.5em;
+}
+
+.m-t4 {
+    margin-top: 4.5em;
+}
+
+.m-b0 {
+    margin-bottom: .8em;
+}
+
+.m-b1 {
+    margin-bottom: 1.5em;
+}
+
+.m-b2 {
+    margin-bottom: 2.5em;
+}
+
+.m-b3 {
+    margin-bottom: 3.5em;
+}
+
+.text-lowercase {
+    text-transform: lowercase !important;
+}
+
+.text-uppercase {
+    text-transform: uppercase !important;
+}
+
+.text-capitalize {
+    text-transform: capitalize !important;
+}
+
+
+p {
+    margin-top: 0;
+}
+
+.text-center {
+    text-align: center !important;
+}
+
+.text-left {
+    text-align: left !important;
+}
+
+.text-right {
+    text-align: right !important;
+}
+
+.animated {
+    animation-fill-mode: none !important;
+}
+
+.underline {
+    border-bottom: 1px solid #262a2a;
+    margin-bottom: 15px;
+    font-size: 13px;
+}

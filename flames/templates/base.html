@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta property="og:title" content="FLAMES">
+    <meta property="og:description" content="Love Calculator">
+    <meta property="og:image" content="{{ url_for('static', filename='img/preview.png') }}" />
+    <meta property="twitter:title" content="FLAMES">
+    <meta property="twitter:description" content="Love Calculator">
+    <meta name="twitter:image" content="{{ url_for('static', filename='img/preview.png') }}">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="description" content="Love Calculator">
+    <meta name="author" content="Richard Santiago">
+    <meta name="copyright" content="Richard Santiago" />
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/frame.css') }}">
+
+    <title>F.L.A.M.E.S - Love Calculator</title>
+    <link rel="icon" type="image/png" href="{{ url_for('static', filename='img/icon.png') }}">
+
+    <!-- Animate -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+</head>
+<body>
+    <div class="bod">
+        <header>
+            <div class="container text-center">
+    
+                <div class="logo-container">
+                    <a href="{{ url_for( 'home' ) }}">
+                    <img onclick="location.href='./'" class="logo" src="{{ url_for('static', filename='img/logo.svg') }}" alt="logo">
+                    </a>
+                </div>
+
+            </div>
+        </header>
+
+        {% block body %}{% endblock %}
+    </div>
+    
+</body>
+</html>

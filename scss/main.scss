@@ -1,0 +1,82 @@
+@import './variables', './header', './button', './input', './mediaq';
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (-o-min-device-pixel-ratio: 3/2),
+only screen and (min--moz-device-pixel-ratio: 1.5),
+only screen and (min-device-pixel-ratio: 1.5) {
+
+    html {
+        overflow-x: hidden;
+    }
+
+}
+
+* {
+    -webkit-overflow-scrolling: touch;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: $primary-color;
+    color: $secondary-color;
+}
+
+.title-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 2em;
+}
+
+.title {
+    font-family: $primary-font;
+    color: $secondary-color;
+}
+
+.invalid {
+    display: flex;
+    flex-direction: column;
+}
+
+.errors {
+    font-family: $primary-font;
+    font-size: 13px;
+}
+
+::placeholder {
+    color: $secondary-color;
+    opacity: 1; /* Firefox */
+}
+  
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color: $secondary-color;
+}
+  
+::-ms-input-placeholder { /* Microsoft Edge */
+   color: $secondary-color;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
+a {
+    text-decoration: none;
+
+    &:link {
+        text-decoration: none;
+      }
+
+    &:visited {
+        text-decoration: none;
+    }
+
+    &:active {
+        text-decoration: none;
+    }
+}
