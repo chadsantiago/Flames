@@ -35,6 +35,12 @@ body {
     color: $secondary-color;
 }
 
+.sub-title {
+    font-size: 16px;
+    font-family: $primary-font;
+    color: $secondary-color;
+}
+
 .invalid {
     display: flex;
     flex-direction: column;
@@ -70,13 +76,16 @@ a {
 
     &:link {
         text-decoration: none;
+        outline: 0;
       }
 
     &:visited {
         text-decoration: none;
+        outline: 0;
     }
 
     &:active {
         text-decoration: none;
+        outline: 0;
     }
 }

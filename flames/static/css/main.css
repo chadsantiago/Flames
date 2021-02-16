@@ -227,6 +227,12 @@ body {
   color: #fff;
 }
 
+.sub-title {
+  font-size: 16px;
+  font-family: "Space Mono", monospace;
+  color: #fff;
+}
+
 .invalid {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -289,13 +295,16 @@ a {
 
 a:link {
   text-decoration: none;
+  outline: 0;
 }
 
 a:visited {
   text-decoration: none;
+  outline: 0;
 }
 
 a:active {
   text-decoration: none;
+  outline: 0;
 }
 /*# sourceMappingURL=main.css.map */
