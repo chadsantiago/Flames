@@ -11,8 +11,8 @@ class NameForm(Form):
 
         if len(fname) <= 2:
             raise ValidationError('Name must contain at least 3 characters!')
-        elif len(fname) >= 20:
-            raise ValidationError('Name must not exceed 20 characters!')
+        elif len(fname) >= 30:
+            raise ValidationError('Name must not exceed 30 characters!')
 
     def validate_secondname(self, secondname):
         sname = secondname.data
@@ -20,5 +20,5 @@ class NameForm(Form):
 
         if len(sname) <= 2:
             raise ValidationError('Name must contain at least 3 characters!')
-        elif len(sname) >= 20:
-            raise ValidationError('Name must not exceed 20 characters!')
+        elif len(sname) >= 30:
+            raise ValidationError('Name must not exceed 30 characters!')
