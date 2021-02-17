@@ -11,6 +11,12 @@
         font-size: 45px;
     }
 
+    .errors {
+        font-family: $primary-font;
+        font-size: 11px;
+    }
+}
+
 }
 
 @media (min-width: 576px) {
@@ -20,6 +26,11 @@
 
     .title, .result {
         font-size: 70px;
+    }
+
+    .errors {
+        font-family: $primary-font;
+        font-size: 11px;
     }
 }
 
@@ -31,6 +42,11 @@
     .title, .result {
         font-size: 70px;
     }
+
+    .errors {
+        font-family: $primary-font;
+        font-size: 13px;
+    }
 }
 
 @media (min-width: 992px) {
@@ -41,6 +57,11 @@
     .title, .result {
         font-size: 70px;
     }
+
+    .errors {
+        font-family: $primary-font;
+        font-size: 13px;
+    }
 }
 
 @media (min-width: 1200px) {
@@ -50,5 +71,10 @@
 
     .title, .result {
         font-size: 70px;
+    }
+
+    .errors {
+        font-family: $primary-font;
+        font-size: 13px;
     }
 }

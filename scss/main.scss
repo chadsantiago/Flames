@@ -46,11 +46,6 @@ body {
     flex-direction: column;
 }
 
-.errors {
-    font-family: $primary-font;
-    font-size: 13px;
-}
-
 ::placeholder {
     color: $secondary-color;
     opacity: 1; /* Firefox */
