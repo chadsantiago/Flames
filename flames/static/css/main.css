@@ -151,6 +151,10 @@ form {
   .result {
     font-size: 45px;
   }
+  .errors {
+    font-family: "Space Mono", monospace;
+    font-size: 11px;
+  }
 }
 
 @media (min-width: 576px) {
@@ -159,6 +163,10 @@ form {
   }
   .title, .result {
     font-size: 70px;
+  }
+  .errors {
+    font-family: "Space Mono", monospace;
+    font-size: 11px;
   }
 }
 
@@ -169,6 +177,10 @@ form {
   .title, .result {
     font-size: 70px;
   }
+  .errors {
+    font-family: "Space Mono", monospace;
+    font-size: 13px;
+  }
 }
 
 @media (min-width: 992px) {
@@ -178,6 +190,10 @@ form {
   .title, .result {
     font-size: 70px;
   }
+  .errors {
+    font-family: "Space Mono", monospace;
+    font-size: 13px;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -186,6 +202,10 @@ form {
   }
   .title, .result {
     font-size: 70px;
+  }
+  .errors {
+    font-family: "Space Mono", monospace;
+    font-size: 13px;
   }
 }
 
@@ -241,11 +261,6 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-}
-
-.errors {
-  font-family: "Space Mono", monospace;
-  font-size: 13px;
 }
 
 ::-webkit-input-placeholder {
